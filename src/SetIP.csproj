@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net48</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <RootNamespace>SetIP</RootNamespace>
+        <AssemblyName>SetIP</AssemblyName>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <PublishSingleFile>true</PublishSingleFile>
+        <nullable>disable</nullable>
+        <ApplicationIcon>ip.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="ip.ico" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="System.Management" Version="7.0.*" />
+    </ItemGroup>
+
+</Project>
